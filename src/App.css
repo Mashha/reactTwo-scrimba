@@ -43,3 +43,32 @@ body {
 .text h1 {
   font-weight: 600;
 }
+
+.card {
+  margin-left: 30px;
+  width: 176px;
+  font-size: 12px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.stars img {
+  width: 14px;
+}
+
+.stars p span {
+  color: rgb(152, 152, 152);
+}
+
+.card p span {
+  font-weight: bold;
+}
