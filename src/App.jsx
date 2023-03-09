@@ -7,26 +7,13 @@ import "./App.css";
 
 function App() {
   const cardElement = data.map(function (obj) {
-    return (
-      <Card
-        key={obj.id}
-        img={obj.coverImg}
-        rating={obj.stats.rating}
-        reviewCount={obj.stats.reviewCount}
-        country={obj.location}
-        title={obj.title}
-        price={obj.price}
-        openSpots={obj.openSpots}
-      />
-    );
+    return <Card key={obj.key} obj={obj} />;
   });
   return (
     <>
       <Header />
       <Hero />
-      <div className="card-list">
-      {cardElement}
-      </div>
+      <div className="card-list">{cardElement}</div>
     </>
   );
 }
