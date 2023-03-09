@@ -1,23 +1,28 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import { Card } from "./components/Card";
-import image1 from "./assets/image12.png";
+import data from "./components/data";
 
 import "./App.css";
 
 function App() {
+  const cardElement = data.map(function (obj) {
+    return (
+      <Card
+        img={obj.coverImg}
+        rating={obj.stats.rating}
+        reviewCount={obj.stats.reviewCount}
+        country={obj.location}
+        title={obj.title}
+        price={obj.price}
+      />
+    );
+  });
   return (
     <>
       <Header />
       <Hero />
-      <Card
-        img={image1}
-        rating="5.0"
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      {cardElement}
     </>
   );
 }
