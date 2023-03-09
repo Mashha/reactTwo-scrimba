@@ -32,6 +32,10 @@ body {
   max-width: 600px;
 }
 
+.gray {
+  color: #918E9B;
+}
+
 .text {
   padding-left: 30px;
 }
@@ -44,10 +48,22 @@ body {
   font-weight: 600;
 }
 
+.card-list {
+  padding-left: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin: 50px 0 20px 0;
+}
+
 .card {
-  margin-left: 30px;
+  display: flex;
   width: 176px;
   font-size: 12px;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
 }
 
 .card img {
@@ -65,10 +81,16 @@ body {
   width: 14px;
 }
 
-.stars p span {
-  color: rgb(152, 152, 152);
+.card p span {
+  font-weight: bold;
 }
 
-.card p span {
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
   font-weight: bold;
 }
