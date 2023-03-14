@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This was my first interactive react app. It was part of Scrimba course.
+This was my second react project. It was part of Scrimba course.
 
 ## We went over:
 - props
